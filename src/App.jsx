@@ -23,8 +23,12 @@ function App() {
     return (
       <div className="fixed inset-0 bg-white dark:bg-gray-900 flex items-center justify-center z-50">
         <div className="text-center">
-          <div className="text-6xl font-bold gradient-text mb-4 font-display animate-pulse">
-            EB
+          <div className="mb-4 flex justify-center">
+            <img
+              src="/profile.jpeg"
+              alt="Profile"
+              className="w-24 h-24 rounded-full object-cover animate-pulse"
+            />
           </div>
           <div className="flex gap-2 justify-center">
             <div className="w-3 h-3 bg-primary-600 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>

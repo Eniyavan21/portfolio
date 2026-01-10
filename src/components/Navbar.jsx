@@ -47,9 +47,13 @@ const Navbar = () => {
             href="#home"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-bold gradient-text font-display"
+            className="flex items-center"
           >
-            EB
+            <img
+              src="/profile.jpeg"
+              alt="Profile"
+              className="w-10 h-10 rounded-full object-cover"
+            />
           </motion.a>
 
           {/* Desktop Navigation */}

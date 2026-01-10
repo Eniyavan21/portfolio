@@ -85,7 +85,7 @@ const About = () => {
             </p>
 
             {/* Highlights Grid */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
               {highlights.map((highlight, index) => (
                 <motion.div
                   key={index}
@@ -108,17 +108,19 @@ const About = () => {
             </div>
 
             {/* Download Resume Button */}
-            <motion.a
-              href="/resume.pdf"
-              download
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.9 }}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200"
-            >
-              <Download size={20} />
-              Download Resume
-            </motion.a>
+            <div className="flex justify-center sm:justify-start">
+              <motion.a
+                href="/resume.pdf"
+                download
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.9 }}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200"
+              >
+                <Download size={20} />
+                Download Resume
+              </motion.a>
+            </div>
           </motion.div>
         </div>
       </div>
